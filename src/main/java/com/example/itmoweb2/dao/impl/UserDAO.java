@@ -8,8 +8,12 @@ public class UserDAO implements UserRepository {
     }
 
     //    private final DataConnection;
+
+
     @Override
-    public void createUser(User user) {
-//        DataConne.create()
+    public User getUser(Long id) {
+        //        DataConne.create()
+
+        return null;
     }
 }

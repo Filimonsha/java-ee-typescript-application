@@ -2,6 +2,8 @@ package com.example.itmoweb2;
 
 import java.io.*;
 
+import com.example.itmoweb2.entity.User;
+import jakarta.persistence.EntityManager;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
@@ -16,6 +18,8 @@ public class HelloServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
 
+//        User user = entityManager.getReference(User.class, 1L);
+//        user.getName();
         // Hello
         PrintWriter out = response.getWriter();
         out.println("<html><body>");

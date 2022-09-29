@@ -1,11 +1,12 @@
 import axios from "axios";
 
 const baseURL = 'http://localhost:8080/ITMO_web_2_war_exploded/';
+// const baseURL = 'google.com';
 
 const axiosInstance = axios.create({
     baseURL,
     headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
     }
 });
 

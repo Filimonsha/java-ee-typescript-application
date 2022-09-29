@@ -1,4 +1,4 @@
-package com.example.itmoweb2.entity;
+package com.example.itmoweb2.model.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

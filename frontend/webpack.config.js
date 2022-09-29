@@ -19,7 +19,7 @@ module.exports = {
     main: path.resolve(__dirname, "./src/index.ts")
   },
   output: {
-    path: path.resolve(__dirname, "./build"),
+    path: path.resolve(__dirname, "../src/main/webapp"),
     filename: "index.js"
   },
   module: {
@@ -39,9 +39,7 @@ module.exports = {
 
             options: {
               sourceMap: !IS_PROD,
-              // modules:{
-              //   localIdentName: '[hash:base64:5]'
-              // }
+
             }
           },
           {
@@ -63,7 +61,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin(
         {
-          template: path.resolve(__dirname, "./index.html")
+          template: path.resolve(__dirname, "../src/main/webapp/index.html")
         }
     ),
     new MiniCssExtractPlugin({

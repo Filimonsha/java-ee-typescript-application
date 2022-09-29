@@ -1,1 +1,1 @@
-export const POST_HIT_INFO_ROUTE = "HitServlet"
+export const HITS_ROUTE = "hits";

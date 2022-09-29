@@ -1,17 +1,8 @@
 package com.example.itmoweb2.dao.jpa;
 
 import com.example.itmoweb2.dao.AbstractDao;
-import com.example.itmoweb2.dao.Dao;
-import com.example.itmoweb2.entity.User;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.Query;
-import jakarta.persistence.TypedQuery;
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import com.example.itmoweb2.model.entity.User;
 import org.hibernate.Session;
-
-import java.util.List;
-import java.util.Optional;
 //        implements Dao<User>
 
 public class UserDao extends AbstractDao<User> {

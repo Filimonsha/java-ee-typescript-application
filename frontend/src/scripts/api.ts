@@ -1,19 +1,21 @@
-import {addHitInfoAtTable} from "./utils/elementsInteracion";
+import {addHitInfoAtTable, addInitialInfoAtTable} from "./utils/elementsInteracion";
 import axiosInstance from "../helpers/axios";
-import {POST_HIT_INFO_ROUTE} from "../helpers/const/routes";
+import {HITS_ROUTE} from "../helpers/const/routes";
 import {resultTable} from "../helpers/const/elements";
 
 
-export default function testHit(x: number, y: number, r: number) {
-
-    axiosInstance.post(POST_HIT_INFO_ROUTE, {
+export function testHit(x: number, y: number, r: number) {
+    axiosInstance.post(HITS_ROUTE, {
         x,
         y,
         r
     }).then(res => {
             console.log("Ответ", res)
-            addHitInfoAtTable(res.data, resultTable)
+            res.data && addHitInfoAtTable(res.data, resultTable)
         })
 }
 
+export function getAllHits(){
+    axiosInstance.get(HITS_ROUTE).then(res=>res.data && addInitialInfoAtTable(res.data,resultTable))
+}
 

@@ -1,9 +1,9 @@
-package com.example.itmoweb2;
+package com.example.itmoweb2.controller;
 
 import com.example.itmoweb2.dao.jpa.HitDao;
 import com.example.itmoweb2.dao.jpa.UserDao;
-import com.example.itmoweb2.entity.Hit;
-import com.example.itmoweb2.entity.User;
+import com.example.itmoweb2.model.entity.Hit;
+import com.example.itmoweb2.model.entity.User;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -11,8 +11,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
 import java.io.IOException;
-import java.security.Security;
-import java.util.Optional;
 
 @WebServlet(name = "FirstServlet", value = "/hello")
 public class UserServlet extends HttpServlet {

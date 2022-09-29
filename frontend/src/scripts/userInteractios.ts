@@ -1,5 +1,5 @@
 import '../styles/userInteraction.scss';
-import testHit from './api';
+import {getAllHits, testHit} from './api';
 import validateTextInput from './validation';
 
 const checkboxValues = [-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2];
@@ -55,7 +55,8 @@ const loadSelectElements = () => {
 };
 
 export default function startApplication() {
-  console.log('ааа');
+  console.log('Приложение запущено с клиента..');
+  getAllHits()
   submitBtn?.addEventListener('click', (e) => {
     e.preventDefault();
     testHit(currentCheckboxValue, parseFloat(textInput!.value), currentRadioValue);

@@ -1,7 +1,7 @@
-package com.example.itmoweb2;
+package com.example.itmoweb2.utility;
 
-import com.example.itmoweb2.entity.Hit;
-import com.example.itmoweb2.entity.User;
+import com.example.itmoweb2.model.entity.Hit;
+import com.example.itmoweb2.model.entity.User;
 import jakarta.servlet.ServletContextEvent;
 import jakarta.servlet.ServletContextListener;
 import jakarta.servlet.annotation.WebListener;
@@ -9,7 +9,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.service.ServiceRegistry;
 
 import java.util.logging.Logger;
 

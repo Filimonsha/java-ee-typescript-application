@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 
 @WebListener
 public class HibernateSessionFactoryListener implements ServletContextListener {
-
+//    Тест
     public final Logger logger = Logger.getLogger(HibernateSessionFactoryListener.class.getName());
 
     @Override
